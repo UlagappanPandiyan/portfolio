@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+<!-- Vertical Navbar on Hero Section -->
+<nav class="vertical-nav">
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<header id="hero" class="d-flex align-items-center text-center">
+    <div class="hero-content">
+        <h1>Hello, I'm <span class="highlight">Ulagappan Pandiyan</span></h1>
+        <p class="lead">An Electronics & Communication Engineering Student Passionate About Technology</p>
+        <div class="hero-buttons">
+            <a href="#about" class="btn btn-outline-light btn-lg hero-btn">About Me</a>
+            <a href="#projects" class="btn btn-outline-light btn-lg hero-btn">Projects</a>
+        </div>
+    </div>
+</header>
+
+
+<!-- About Section -->
+<section id="about" class="container-fluid d-flex align-items-center justify-content-center">
+    <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="1519695934000_1394219+copy.png" class="img-fluid rounded-circle shadow-lg" alt="Profile Photo">
+            </div>
+            <div class="col-md-6">
+                <p>I am a dedicated Electronics and Communication Engineering student with a strong passion for technology and innovation. My focus lies in developing efficient, user-friendly solutions through software and hardware integration. I enjoy tackling complex challenges and strive to create impactful applications that enhance everyday experiences.</p>
+                <div class="mt-3">
+                    <a href="#projects" class="btn btn-outline-dark">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="container-fluid d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+        <h2>Projects</h2>
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card project-card shadow">
+                    <img src="download.png" class="card-img-top" alt="Fire Detection System">
+                    <div class="card-body">
+                        <h5 class="card-title">Image-Based Fire Detection System</h5>
+                        <p class="card-text">An Arduino-based system that detects fire through image processing, ensuring timely alerts and enhanced safety.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal1">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card project-card shadow">
+                    <img src="download.jpeg" class="card-img-top" alt="Vehicle Communication System">
+                    <div class="card-body">
+                        <h5 class="card-title">Vehicle-to-Vehicle Communication</h5>
+                        <p class="card-text">A system designed to enhance road safety by communicating headlight timing and brightness between vehicles.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal2">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card project-card shadow">
+                    <img src="download (1).jpeg" class="card-img-top" alt="ESP32 Chatbot">
+                    <div class="card-body">
+                        <h5 class="card-title">ESP32 ChatGPT Voice Assistant</h5>
+                        <p class="card-text">A voice-activated chatbot built on ESP32, using ChatGPT for real-time conversation and user interaction through a speaker.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal3">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional projects can be added here -->
+        </div>
+    </div>
+</section>
+
+<!-- Project Modals (Optional for "Learn More" buttons) -->
+<div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel1">Image-Based Fire Detection System</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Details about the fire detection system project...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel2">Vehicle-to-Vehicle Communication</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Details about the vehicle communication system...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel3">ESP32 ChatGPT Voice Assistant</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Details about the ChatGPT voice assistant project...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Section -->
+<section id="skills" class="container-fluid d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+        <h2>Skills</h2>
+        <div class="row">
+            <!-- Hardware Skills -->
+            <div class="col-md-3">
+                <i class="fas fa-microchip fa-4x text-primary"></i>
+                <h4>Microcontrollers</h4>
+                <p>Arduino, ESP32, PIC</p>
+            </div>
+            <div class="col-md-3">
+                <i class="fas fa-signal fa-4x text-primary"></i>
+                <h4>Communication Systems</h4>
+                <p>RF, Bluetooth, WiFi, V2V Communication</p>
+            </div>
+            <div class="col-md-3">
+                <i class="fas fa-cogs fa-4x text-primary"></i>
+                <h4>Embedded Systems</h4>
+                <p>Embedded C, RTOS, Hardware Design</p>
+            </div>
+            <div class="col-md-3">
+                <i class="fas fa-bolt fa-4x text-primary"></i>
+                <h4>Power Electronics</h4>
+                <p>Inverters, Transistors, MOSFETs</p>
+            </div>
+
+            <!-- Software Skills -->
+            <div class="col-md-3 mt-4">
+                <i class="fab fa-python fa-4x text-primary"></i>
+                <h4>Python</h4>
+                <p>Data Analysis, Image Processing</p>
+            </div>
+            <div class="col-md-3 mt-4">
+                <i class="fab fa-js fa-4x text-primary"></i>
+                <h4>JavaScript</h4>
+                <p>Web Development, Interactive Design</p>
+            </div>
+            <div class="col-md-3 mt-4">
+                <i class="fab fa-html5 fa-4x text-primary"></i>
+                <h4>HTML/CSS</h4>
+                <p>Responsive Web Design</p>
+            </div>
+            <div class="col-md-3 mt-4">
+                <i class="fas fa-network-wired fa-4x text-primary"></i>
+                <h4>Networking</h4>
+                <p>TCP/IP, IoT, Protocol Design</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="container-fluid d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch, feel free to reach out to me at:</p>
+        <p><strong>Name:</strong> Ulagappan Pandiyan</p>
+        <p><strong>Email:</strong> ulagappan283@gmail.com</p> <!-- Replace with your actual email -->
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p> <!-- Replace with your LinkedIn URL -->
+        <p><strong>GitHub:</strong> <a href="https://github.com/UlagappanPandiyan" target="_blank">UlagappanPandiyan</a></p> <!-- Replace with your GitHub URL -->
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

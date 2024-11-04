@@ -1,0 +1,198 @@
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    color: #333;
+}
+
+/* Full-page section styling */
+section, header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.vertical-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.vertical-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vertical-nav ul li {
+    margin: 20px 0;
+}
+
+.vertical-nav ul li a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.vertical-nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(202, 45, 45, 0.6), rgba(19, 62, 119, 0.6)), url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content .highlight {
+    color: #f5f7f8;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #ddd;
+}
+
+/* Section Headers */
+h2 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}/* Hero Buttons Styling */
+.hero-buttons .hero-btn {
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+    color: #f5f7f8;
+    border: 2px solid #f5f7f8;
+}
+
+.hero-buttons .hero-btn:hover {
+    background-color: #f5f7f8;
+    color: #333;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Animation for Highlighted Text */
+@keyframes textPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.hero-content .highlight {
+    animation: textPulse 1.5s infinite;
+}
+
+
+/* Project Cards */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form */
+#contact .form-control {
+    border-radius: 0;
+    border-color: #ddd;
+    transition: border-color 0.3s ease;
+}
+
+#contact .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+/* Vertical Navbar Styling */
+.vertical-nav {
+    position: fixed;
+    left: 20px;  /* Adjusted positioning for visibility */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.vertical-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical-nav ul li {
+    margin: 15px 0;
+    opacity: 0;  /* Initial opacity for slide-in animation */
+    transform: translateX(-80px);  /* Initial position for slide-in animation */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.vertical-nav ul li.show {
+    opacity: 1;
+    transform: translateX(0); /* Bring buttons to the original position */
+}
+
+.vertical-nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;  /* Dial shape size */
+    height: 65px;
+    border-radius: 50%;  /* Perfect circular shape */
+    background-color: #f040a6;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.vertical-nav ul li a:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.vertical-nav ul li a.active {
+    background-color: #f5f7f8;
+    color: #333;
+}
